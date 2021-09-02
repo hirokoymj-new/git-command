@@ -123,5 +123,9 @@ https://dzone.com/articles/git-reset-head
 
 ## git cherry-pick <commit-hash>
    
-
-
+## Update repository
+   
+git remove -v to see your current repository
+git remote set-url origin <new repository> to update your config
+   
+   
