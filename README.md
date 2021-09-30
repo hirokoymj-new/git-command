@@ -112,8 +112,6 @@ git remote origin [remote-repo-name]
 ```js
 git remote show origin
 ```
- 
-
 
 ## git reset HEAD^
 
@@ -142,7 +140,12 @@ If you want to rename the current branch, you can do:
 ```js
 git branch -m <newname>   
 ```
-   
+
+## Switching repo
+
+```js
+git remote set-url origin <new repository> to update your config
+```   
    
    
    
