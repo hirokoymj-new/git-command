@@ -130,5 +130,19 @@ git remove -v to see your current repository
 git remote set-url origin <new repository> to update your config
 ```
    
+## Rename local branch
+If you want to rename a branch while pointed to any branch, do:
+
+```js
+git branch -m <oldname> <newname>
+```  
+   
+If you want to rename the current branch, you can do:
+   
+```js
+git branch -m <newname>   
+```
+   
+   
    
    
