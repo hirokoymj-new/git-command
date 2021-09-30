@@ -117,16 +117,6 @@ git remote show origin
 
 https://dzone.com/articles/git-reset-head
 
-
-
-## git cherry-pick <commit-hash>
-   
-## Update repository
-
-```js
-git remove -v to see your current repository
-git remote set-url origin <new repository> to update your config
-```
    
 ## Rename local branch
 If you want to rename a branch while pointed to any branch, do:
@@ -141,11 +131,12 @@ If you want to rename the current branch, you can do:
 git branch -m <newname>   
 ```
 
-## Switching repo
+## Switching current repo to another one
 
 ```js
 git remote set-url origin <new repository> to update your config
 ```   
+git remove -v to see your current repository
    
    
    
