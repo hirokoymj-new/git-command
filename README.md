@@ -111,6 +111,9 @@ git remote origin [remote-repo-name]
 
 ```js
 git remote show origin
+
+git fetch
+git checkout test
 ```
 
 ## git reset HEAD^
