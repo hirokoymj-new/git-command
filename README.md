@@ -140,6 +140,14 @@ git branch -m <newname>
 git remote set-url origin <new repository> to update your config
 ```   
 git remove -v to see your current repository
+
+
+## Undo your commit 
+
+```js
+git reset HEAD~
+```
+
    
    
    
