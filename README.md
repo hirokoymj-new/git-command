@@ -147,7 +147,11 @@ git remove -v to see your current repository
 ```js
 git reset HEAD~
 ```
+## Checkout remote branch
 
+```js
+git checkout [remote branch name]
+```
    
    
    
