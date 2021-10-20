@@ -157,7 +157,9 @@ git checkout [remote branch name]
    
 git commit --amend -m "new message"
 
-## Update commit comment
+## Modify commit message
+
+when you have typo in a commit message, you can fix using below command then push again.
 
 ```js
 git commit --amend -m "new message"
