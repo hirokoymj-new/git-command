@@ -149,6 +149,8 @@ git reset HEAD~
 ```
 ## Checkout remote branch
 
+Use `checkout` instead of `git pull branch-name`
+
 ```js
 git checkout [remote branch name]
 ```
