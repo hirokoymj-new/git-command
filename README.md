@@ -155,5 +155,12 @@ Use `checkout` instead of `git pull branch-name`
 git checkout [remote branch name]
 ```
    
+git commit --amend -m "new message"
+
+## Update commit comment
+
+```js
+git commit --amend -m "new message"
+```
    
    
