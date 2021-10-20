@@ -101,6 +101,9 @@ Trying to see the git log.
 git log ---graph --oneline
 ```
 
+
+
+
 ## Remove remote repository
 
 ```js
@@ -164,5 +167,17 @@ when you have typo in a commit message, you can fix using below command then pus
 ```js
 git commit --amend -m "new message"
 ```
+   
+## git reflog 
+- listed all the tips of branches 
+
+```js
+// checking all logs
+git reflog
+
+//you can rollback at hash number 12345 
+git reset --hard 12345
+```
+
    
    
