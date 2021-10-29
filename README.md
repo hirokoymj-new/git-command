@@ -179,5 +179,12 @@ git reflog
 git reset --hard 12345
 ```
 
+BT
+KT
+ST
+Med
+q
+
+
    
    
