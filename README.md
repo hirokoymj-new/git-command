@@ -1,12 +1,14 @@
 # Git command
 
-## git pull --rebase
+## git pull origin master --rebase
 
-
-
+- `git merge` will be added the latest remote commit on the top in your local commit. so when you merge each time, a commit history has two branchs for local and remote.
+- `git pull --rebase` will be added the latest remote commit right before in your local commit so a commit history can keep one branch. so it is easy to read the past commit history.
+ 
 https://stackoverflow.com/questions/2472254/when-should-i-use-git-pull-rebase
 
 >sometimes--by whatever reason--you think that it would actually be better if these two--remote and local--were one branch. Like in SVN. It is here where git pull --rebase comes into play. You no longer merge--you actually commit on top of the remote branch. That's what it actually is about.
+- git merge the latest commit will add on the top your local branch. git pull --rebase is the latest commit 
 
 1. (develop) git pull                     // Gets the latest develop
 2. (my-branch) git checkout my-branch     // Switch a branch
@@ -19,6 +21,11 @@ https://stackoverflow.com/questions/2472254/when-should-i-use-git-pull-rebase
 9. (my-branch) git commit -m 'some commit message'
 10. (my-branch) git push my-branch --no-verify --force
 
+## Squash multiple commits to one.
+
+```js
+git reset origin/develop
+```
 
 ## Daily development flow
 
