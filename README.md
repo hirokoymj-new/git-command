@@ -187,3 +187,6 @@ git reflog
 //you can rollback at hash number 12345 
 git reset --hard 12345
 ```
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
