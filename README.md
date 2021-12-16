@@ -1,5 +1,28 @@
 # Git command
 
+## Combining Git commits with squash
+
+1. Try to three commits to one.
+
+```js
+git rebase -i HEAD~3
+```
+
+2. Editor mode. Replace `pick` to `squash`
+
+```js
+
+```
+
+3. Editor mode again. Update your commit comment. `#` will be ignored.
+4. Show git log and see if you can see one commits.
+
+```js
+git log --oneline
+```
+
+test test test test
+
 ## git pull origin master --rebase
 
 - `git merge` will be added the latest remote commit on the top in your local commit. so when you merge each time, a commit history has two branchs for local and remote.
@@ -21,10 +44,6 @@ https://stackoverflow.com/questions/2472254/when-should-i-use-git-pull-rebase
 8. (my-branch) git add .
 9. (my-branch) git commit -m 'some commit message'
 10. (my-branch) git push my-branch --no-verify --force
-
-## Squash multiple commits to one.
-
-- Before creating a pull request you will squash your multiple commits to one so in your pull request has only one commit.
 
 ```js
 git reset origin/master
@@ -191,4 +210,8 @@ git reset --hard 12345
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-## commit test1
+## commit test 1-1
+
+## commit test 1-2
+
+## commit test 1-3
