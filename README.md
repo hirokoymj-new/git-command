@@ -1,4 +1,44 @@
-# Git command
+# Git commands
+
+## Combining Git commits with squash
+
+1. Try to four commits to one.
+
+```js
+git rebase -i HEAD~4
+```
+
+1. Editor mode. Replace `pick` to `squash` and save the file with `ESC + WQ!`.
+
+**Before**
+
+```js
+pick 02d2eb1 This is the final commit.
+pick 577eada the first commit
+pick 5cf4b91 the second commit
+pick 0bac4a7 third commit
+```
+
+**After**
+
+```js
+pick 02d2eb1 This is the final commit.
+squash 577eada the first commit
+squash 5cf4b91 the second commit
+squash 0bac4a7 third commit
+```
+
+3. Editor mode again. Update your commit comment. `#` will be ignored.
+
+```js
+The final commit message.
+```
+
+4. Show git log and see if you can see one commits.
+
+```js
+git log --oneline
+```
 
 ## git pull origin master --rebase
 
@@ -21,10 +61,6 @@ https://stackoverflow.com/questions/2472254/when-should-i-use-git-pull-rebase
 8. (my-branch) git add .
 9. (my-branch) git commit -m 'some commit message'
 10. (my-branch) git push my-branch --no-verify --force
-
-## Squash multiple commits to one.
-
-- Before creating a pull request you will squash your multiple commits to one so in your pull request has only one commit.
 
 ```js
 git reset origin/master
@@ -191,4 +227,8 @@ git reset --hard 12345
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-## commit test1
+## commit test 1-1
+
+## commit test 1-2
+
+## commit test 1-3
