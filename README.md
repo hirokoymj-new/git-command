@@ -26,7 +26,7 @@ https://stackoverflow.com/questions/2472254/when-should-i-use-git-pull-rebase
 - Before creating a pull request you will squash your multiple commits to one so in your pull request has only one commit.
 
 ```js
-git reset origin/develop
+git reset origin/master
 ```
 
 ## Daily development flow
