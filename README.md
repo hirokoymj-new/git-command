@@ -1,27 +1,44 @@
-# Git command
+# Git commands
 
 ## Combining Git commits with squash
 
-1. Try to three commits to one.
+1. Try to four commits to one.
 
 ```js
-git rebase -i HEAD~3
+git rebase -i HEAD~4
 ```
 
-2. Editor mode. Replace `pick` to `squash`
+1. Editor mode. Replace `pick` to `squash` and save the file with `ESC + WQ!`.
+
+**Before**
 
 ```js
+pick 02d2eb1 This is the final commit.
+pick 577eada the first commit
+pick 5cf4b91 the second commit
+pick 0bac4a7 third commit
+```
 
+**After**
+
+```js
+pick 02d2eb1 This is the final commit.
+squash 577eada the first commit
+squash 5cf4b91 the second commit
+squash 0bac4a7 third commit
 ```
 
 3. Editor mode again. Update your commit comment. `#` will be ignored.
+
+```js
+The final commit message.
+```
+
 4. Show git log and see if you can see one commits.
 
 ```js
 git log --oneline
 ```
-
-test test test test
 
 ## git pull origin master --rebase
 
