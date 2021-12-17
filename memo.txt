@@ -23,3 +23,14 @@ https://stackoverflow.com/questions/2472254/when-should-i-use-git-pull-rebase
 ```js
 git reset origin/master
 ```
+
+## git reflog
+
+- listed all the tips of branches
+
+```js
+// checking all logs
+git reflog
+
+//you can rollback at hash number 12345
+git reset --hard 12345
