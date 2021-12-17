@@ -81,10 +81,22 @@ Trying to see the git log.
 git log ---graph --oneline
 ```
 
-## Remove remote repository
+## Delete Remote Branch
 
 ```js
-git remote origin [remote-repo-name]
+git push origin --delete <remote branch name>
+```
+
+```js
+hiroko@owners-MacBook-Pro git-command % git push origin --delete demo
+To https://github.com/hirokoymj/git-command.git
+ - [deleted]         demo
+```
+
+## Delete Local Branch
+
+```js
+git branch -D <branch name>
 ```
 
 ## Show remote repository in your local
@@ -158,11 +170,8 @@ git reflog
 git reset --hard 12345
 ```
 
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-## commit test 1-1
-
-## commit test 1-2
-
-## commit test 1-3
+test 1
+test 2
+test 3
+test 4
+test 5
