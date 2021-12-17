@@ -1,4 +1,4 @@
-## Combining Git commits with squash
+## Combining Git commits with squash (before pushing)
 
 1. Try to four commits to one.
 
@@ -36,6 +36,51 @@ The final commit message.
 
 ```js
 git log --oneline
+```
+
+<hr />
+
+## Combining Git commits with squash after pushing remote
+
+Combining your commits in the local first.
+
+```js
+git rebase -i HEAD~2
+```
+
+**Before**
+
+```js
+//git log
+commit 1a7252d6e70116a2f283d5c13439b1bdf3841010 (HEAD -> force-test, origin/force-test)
+Author: Hiroko Yamaji <hiroko@hirokoymj.com>
+Date:   Fri Dec 17 15:02:35 2021 +0900
+
+    bbb
+
+commit f2d096bf287676b9351a8cb9e4dd4a9773e09cea
+Author: Hiroko Yamaji <hiroko@hirokoymj.com>
+Date:   Fri Dec 17 15:02:21 2021 +0900
+
+    aaa
+
+```
+
+**After**
+
+```js
+// git log
+commit f6be1fa48f869512b4daf28a9bc729a41f0481ab (HEAD -> force-test)
+Author: Hiroko Yamaji <hiroko@hirokoymj.com>
+Date:   Fri Dec 17 15:02:21 2021 +0900
+
+    combined two commits.
+```
+
+Then push your branch with `--force` option.
+
+```js
+git push origin test --force
 ```
 
 <hr />
@@ -183,3 +228,6 @@ comment 1
 # Date:      Fri Dec 17 11:51:29 2021 +0900
 #
 ```
+
+aaa
+bbb
