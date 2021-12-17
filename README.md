@@ -166,13 +166,23 @@ git checkout [remote branch name]
 
 ## Modify a commit message
 
+<<<<<<< HEAD
 - Run `git commit --amend`.
+=======
+## Modify a commit message
+
+1. Run `git commit --amend`.
+>>>>>>> db578f79e9a6c5fffb6be71b9de740629559a738
 
 ```js
 git commit --amend
 ```
 
+<<<<<<< HEAD
 - Changes to an editor mode so you can edit a current message.
+=======
+1. Changes to an editor mode so you can edit a current message.
+>>>>>>> db578f79e9a6c5fffb6be71b9de740629559a738
 
 ```js
 comment 1
@@ -182,6 +192,11 @@ comment 1
 #
 # Date:      Fri Dec 17 11:51:29 2021 +0900
 #
+<<<<<<< HEAD
 ```
 
 <hr >
+=======
+
+```
+>>>>>>> db578f79e9a6c5fffb6be71b9de740629559a738
