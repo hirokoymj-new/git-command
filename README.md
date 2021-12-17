@@ -217,7 +217,7 @@ git checkout [remote branch name]
 git commit --amend
 ```
 
-- Changes to an editor mode so you can edit a current message.
+- In Editor mode you can change a current message.
 
 ```js
 comment 1
