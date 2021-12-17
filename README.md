@@ -38,6 +38,8 @@ The final commit message.
 git log --oneline
 ```
 
+<hr />
+
 ## Merge
 
 Trying to merge `test-branch` to `master` branch.
@@ -55,6 +57,8 @@ Trying to merge `test-branch` to `master` branch.
    git push origin master
    ```
 
+<hr />
+
 ## Pull
 
 Get the latest code from remote repository so your local repository could be updated. When your co-workers update a master branch, you should get the latest one!
@@ -62,6 +66,8 @@ Get the latest code from remote repository so your local repository could be upd
 ```js
 git pull master
 ```
+
+<hr />
 
 ## Stash
 
@@ -73,6 +79,8 @@ git merge master //---> you can merge the latest master here!
 git stash apply	// ---> Changed back to your changes.
 ```
 
+<hr />
+
 ## Log
 
 Trying to see the git log.
@@ -80,6 +88,8 @@ Trying to see the git log.
 ```js
 git log ---graph --oneline
 ```
+
+<hr />
 
 ## Delete Remote Branch
 
@@ -93,11 +103,15 @@ To https://github.com/hirokoymj/git-command.git
  - [deleted]         demo
 ```
 
+<hr />
+
 ## Delete Local Branch
 
 ```js
 git branch -D <branch name>
 ```
+
+<hr />
 
 ## Show remote repository in your local
 
@@ -107,6 +121,8 @@ git remote show origin
 git fetch
 git checkout test
 ```
+
+<hr />
 
 ## git reset HEAD^
 
@@ -148,30 +164,24 @@ Use `checkout` instead of `git pull branch-name`
 git checkout [remote branch name]
 ```
 
-git commit --amend -m "new message"
+## Modify a commit message
 
-## Modify commit message
-
-when you have typo in a commit message, you can fix using below command then push again.
+- Run `git commit --amend`.
 
 ```js
-git commit --amend -m "new message"
+git commit --amend
 ```
 
-## git reflog
-
-- listed all the tips of branches
+- Changes to an editor mode so you can edit a current message.
 
 ```js
-// checking all logs
-git reflog
+comment 1
 
-//you can rollback at hash number 12345
-git reset --hard 12345
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Fri Dec 17 11:51:29 2021 +0900
+#
 ```
 
-test 1
-test 2
-test 3
-test 4
-test 5
+<hr >
