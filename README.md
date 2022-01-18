@@ -1,85 +1,28 @@
 ## Combining Git commits with squash (before pushing)
 
-1. Try to four commits to one.
-
 ```js
-git rebase -i HEAD~4
-```
+// Check how many commits you want to combine.
+git log
+// Combine three commits
+git reset --soft HEAD~3 &&
+git commit
 
-1. Editor mode. Replace `pick` to `squash` and save the file with `ESC + WQ!`.
-
-**Before**
-
-```js
-pick 02d2eb1 This is the final commit.
-pick 577eada the first commit
-pick 5cf4b91 the second commit
-pick 0bac4a7 third commit
-```
-
-**After**
-
-```js
-pick 02d2eb1 This is the final commit.
-squash 577eada the first commit
-squash 5cf4b91 the second commit
-squash 0bac4a7 third commit
-```
-
-3. Editor mode again. Update your commit comment. `#` will be ignored.
-
-```js
-The final commit message.
-```
-
-4. Show git log and see if you can see one commits.
-
-```js
-git log --oneline
+// Push to remote
+git push origin your-branch
 ```
 
 <hr />
 
-## Combining Git commits with squash after pushing remote
-
-Combining your commits in the local first.
+## Combining Git commits with squash after pushing to remote
 
 ```js
-git rebase -i HEAD~2
-```
+// Check how many commits you want to combine.
+git log
+// Combine three commits
+git reset --soft HEAD~3 &&
+git commit
 
-**Before**
-
-```js
-//git log
-commit 1a7252d6e70116a2f283d5c13439b1bdf3841010 (HEAD -> force-test, origin/force-test)
-Author: Hiroko Yamaji <hiroko@hirokoymj.com>
-Date:   Fri Dec 17 15:02:35 2021 +0900
-
-    bbb
-
-commit f2d096bf287676b9351a8cb9e4dd4a9773e09cea
-Author: Hiroko Yamaji <hiroko@hirokoymj.com>
-Date:   Fri Dec 17 15:02:21 2021 +0900
-
-    aaa
-
-```
-
-**After**
-
-```js
-// git log
-commit f6be1fa48f869512b4daf28a9bc729a41f0481ab (HEAD -> force-test)
-Author: Hiroko Yamaji <hiroko@hirokoymj.com>
-Date:   Fri Dec 17 15:02:21 2021 +0900
-
-    combined two commits.
-```
-
-Then push your branch with `--force` option.
-
-```js
+// Push to remote with force option
 git push origin test --force
 ```
 
