@@ -1,4 +1,4 @@
-## Combining Git commits with squash (before pushing)
+## Squash my last X commits together
 
 ```js
 // Check how many commits you want to combine.
@@ -8,12 +8,12 @@ git reset --soft HEAD~3 &&
 git commit
 
 // Push to remote
-git push origin your-branch
+git push origin test-branch
 ```
 
 <hr />
 
-## Combining Git commits with squash after pushing to remote
+## Squash my last X commits together(after pushing to remote)
 
 ```js
 // Check how many commits you want to combine.
@@ -172,5 +172,4 @@ comment 1
 #
 ```
 
-squash test 1
-squash test 2
+test 2
