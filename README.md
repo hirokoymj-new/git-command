@@ -11,6 +11,45 @@ git commit
 git push origin test-branch
 ```
 
+**BEFORE squashing**
+
+```js
+% git log
+commit 9b1d29626cb4fae62da7492028048fcea0f159b5 (HEAD -> master)
+Author: Hiroko Yamaji <hiroko@hirokoymj.com>
+Date:   Tue Jan 18 17:55:28 2022 +0900
+
+    second commit
+
+commit d2fd9e8a62b6518e07890fb352694d172b633b54
+Author: Hiroko Yamaji <hiroko@hirokoymj.com>
+Date:   Tue Jan 18 17:55:02 2022 +0900
+
+    first commit
+
+commit d0499f4c9f87da9b98a8fbffbeb40c408d51fdc6 (origin/master)
+Author: Hiroko Yamaji <hiroko@hirokoymj.com>
+Date:   Tue Jan 18 14:42:01 2022 +0900
+
+    Updated readme
+```
+
+**AFTER squashing**
+
+```js
+commit b6be0711908dccaa83150e57f3c3932b72596b9a (HEAD -> master)
+Author: Hiroko Yamaji <hiroko@hirokoymj.com>
+Date:   Tue Jan 18 17:57:22 2022 +0900
+
+    Combined two commits here!
+
+commit d0499f4c9f87da9b98a8fbffbeb40c408d51fdc6 (origin/master)
+Author: Hiroko Yamaji <hiroko@hirokoymj.com>
+Date:   Tue Jan 18 14:42:01 2022 +0900
+
+    Updated readme
+```
+
 <hr />
 
 ## Squash my last X commits together(after pushing to remote)
